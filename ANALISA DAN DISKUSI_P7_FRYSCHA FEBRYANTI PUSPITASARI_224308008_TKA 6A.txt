@@ -1,0 +1,11 @@
+Nama		 	:  Fryscha Febryanti Puspitasari
+NIM 	 		:  224308008
+Kelas 	 		:  TKA 6A
+Akun Github (Tautan) 	:  https://github.com/Fryscha
+Student Lab Assistant 	:  Yulia Brilianty
+
+Analisis Hasil:
+Pembuatan setup stereo camera diawali dengan dua kamera USB diinisialisasi untuk menangkap gambar secara simultan dari sudut pandang kiri dan kanan secara real-time. Program ini memastikan bahwa kedua kamera dapat berfungsi dengan baik dan menampilkan video streaming secara paralel, yang merupakan dasar penting untuk akuisisi data stereo. Kemudian, pembuatan canny edge detection dilakukan dengan menerapkan algoritma Canny Edge Detection pada frame video yang diperoleh dari masing-masing kamera stereo. Proses ini meliputi konversi citra ke grayscale, penghalusan dengan Gaussian blur, lalu deteksi tepi menggunakan ambang batas tertentu. Hasilnya adalah peta tepi yang menonjolkan batas-batas objek seperti rel kereta api dalam gambar secara real-time. Lalu, dilakukan perhitungan peta kedalaman berdasarkan metode stereo vision menggunakan algoritma block matching StereoBM dari OpenCV. Disparitas antara citra kiri dan kanan dihitung untuk menghasilkan depth map yang merepresentasikan jarak relatif objek terhadap kamera.
+
+Diskusi:
+Output dari kamera stereo yaitu menampilkan dua kamera. Kemudian, output canny edge detection berupa citra biner dengan garis-garis tepi jelas membantu mengidentifikasi batas fisik rel pada setiap frame secara langsung sehingga memudahkan ekstraksi fitur geometris jalur kereta. Lalu, output peta kedalaman menunjukkan variasi jarak permukaan rel terhadap posisi kamera dalam bentuk bounding box. Area dengan disparitas tinggi menandakan objek lebih dekat sedangkan nilai rendah menunjukkan objek lebih jauh.
